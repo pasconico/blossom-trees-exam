@@ -26,14 +26,6 @@
     color: white;
 }
 
-.navbar-toggler {
-	border-color: white !important;
-}
-
-.navbar-toggler-icon {
-	color: white !important;
-}
-
 .navbar-nav .btn {
     margin-right: 15px;
     padding: 8px 20px;
