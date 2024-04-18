@@ -1,0 +1,11 @@
+<div class="exclusive-promotion-container container">
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <h2 class="">Exclusive Promotion</h2>
+        <h6 class=""><a href=""><small>View More</small></a></h6>
+    </div>
+    <div class="promotion-image-container">
+        <div ng-repeat="promotions in promotionList" style="position:relative;">
+            <img class="promo-image mt-3" ng-src="{{promotions.promoImage}}" alt="" />
+        </div>
+    </div>
+</div>

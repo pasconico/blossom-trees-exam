@@ -1,0 +1,50 @@
+[
+    {
+        "game": "SLOT CASINO",
+        "available": "true",
+        "gameImage": "common/images/game-button-1.png",
+        "button": "PLAY"
+    },
+    
+    {
+        "game": "LIVE CASINO",
+        "available": "true",
+        "gameImage": "common/images/game-button-2.png",
+        "button": "PLAY"
+    },
+    
+    {
+        "game": "SPORTS CASINO",
+        "available": "true",
+        "gameImage": "common/images/game-button-3.png",
+        "button": "PLAY"
+    },
+    
+    {
+        "game": "MINI GAME",
+        "available": "true",
+        "gameImage": "common/images/game-button-4.png",
+        "button": "PLAY"
+    },
+    
+    {
+        "game": "LOTTERY",
+        "available": "true",
+        "gameImage": "common/images/game-button-5.png",
+        "button": "PLAY"
+    },
+    
+    {
+        "game": "EVENTS & PROMO",
+        "available": "true",
+        "gameImage": "common/images/game-button-6.png",
+        "button": "VIEW"
+    },
+    
+    {
+        "game": "COUPON",
+        "available": "true",
+        "gameImage": "common/images/game-button-7.png",
+        "button": "VIEW"
+    }
+]

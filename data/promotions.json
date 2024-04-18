@@ -1,0 +1,19 @@
+[
+    {
+        "promoImage": "common/images/promo-1.jpg",
+        "available": "true"
+    },
+    {
+        "promoImage": "common/images/promo-2.jpg",
+        "available": "true"
+    },
+    {
+        "promoImage": "common/images/promo-3.jpg",
+        "available": "true"
+    },
+    {
+        "promoImage": "common/images/promo-4.jpg",
+        "available": "true"
+    }
+
+]

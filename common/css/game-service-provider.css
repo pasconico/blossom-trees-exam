@@ -1,0 +1,11 @@
+.game-service-provider-container h2{
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 30px;
+}
+
+.game-service-provider-container{
+    min-width: 1398px;
+    margin-inline: auto;
+    transform: translateX(-0.8%);
+}

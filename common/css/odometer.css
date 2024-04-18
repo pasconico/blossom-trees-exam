@@ -1,0 +1,23 @@
+.odometer-container {
+    height: 220px;
+    width: 100%;
+    position: relative;
+    padding: 5px 0;
+    background: url(/common/images/jackpot.png) top center no-repeat;
+}
+
+.jackpot{
+    position: absolute;
+    right: 38%;
+}
+
+.jackpot-title {
+    text-align: center;
+}
+
+.jackpot-odometer{
+    width: 660px;
+    height: 55px;
+    overflow: hidden;
+    position: relative;
+}
