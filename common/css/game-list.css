@@ -56,6 +56,7 @@ h3 {
 .image-hover{
     width: 339px;
     transition: background 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .hover-1, .hover-2, .hover-3{
@@ -74,4 +75,28 @@ h3 {
 
 .hover-1:hover{
     background: url(/common/images/game-button-01-hover.png) !important;
+} 
+
+.hover-2:hover{
+    background: url(/common/images/game-button-02-hover.png) !important;
+} 
+
+.hover-3:hover{
+    background: url(/common/images/game-button-03-hover.png) !important;
+} 
+
+.hover-4:hover{
+    background: url(/common/images/game-button-04-hover.png) !important;
+} 
+
+.hover-5:hover{
+    background: url(/common/images/game-button-05-hover.png) !important;
+} 
+
+.hover-6:hover{
+    background: url(/common/images/game-button-06-hover.png) !important;
+} 
+
+.hover-7:hover{
+    background: url(/common/images/game-button-07-hover.png) !important;
 } 
