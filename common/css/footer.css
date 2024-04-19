@@ -2,7 +2,7 @@
     margin-bottom: 0;
     text-align: center;
     padding-bottom: 100px;
-    min-width: 1398px;
+    min-width: 1392px;
 }
 
 .footer-links {
@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    min-width: 1398px;
+    min-width: 1392px;
 }
 
 .footer-links a:hover{

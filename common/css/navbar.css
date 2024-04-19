@@ -3,11 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 1398px;
+    min-width: 1392px;
 }
 
 .nav-container{
-    min-width: 1398px;
+    min-width: 1392px;
 }
 
 .nav-link {

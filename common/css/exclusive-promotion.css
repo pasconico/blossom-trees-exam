@@ -16,13 +16,13 @@
 }
 
 .exclusive-promotion-container{
-    min-width: 1398px;
+    min-width: 1392px;
     margin-inline: auto;
     transform: translateX(-0.8%);
 }
 
 .promotion-image-container{
-    min-width: 1398px;
+    min-width: 1392px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;

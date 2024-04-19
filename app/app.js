@@ -3,6 +3,7 @@ var myApp = angular.module("myApp", ["ngRoute", "ngAnimate"]);
 
 
 myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
+    $scope.gspNo = "";
 
     $scope.loadCounter = function () {
         $http.get("app/api/getJackpot.php")
@@ -31,5 +32,9 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('data/promotions.json').then(function (response) {
         $scope.promotionList = response.data;
+    });
+
+    $http.get('data/gsp.json').then(function (response) {
+        $scope.gspList = response.data;
     });
 }]);
