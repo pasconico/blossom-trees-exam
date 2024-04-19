@@ -1,11 +1,17 @@
 .odometer-container {
     height: 220px;
+    min-width: 1392px;
     width: 100%;
     position: relative;
     padding: 5px 0;
     background: url(/common/images/jackpot.png) top center no-repeat;
+    transition: background 300ms;
 }
 
+.odometer-container:hover{
+    background: url(/common/images/jackpot-hover.png) top center no-repeat;
+    cursor: pointer;
+}
 
 
 .jackpot-title {
