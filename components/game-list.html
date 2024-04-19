@@ -1,8 +1,8 @@
 <div class="game-list-container container">
     <h2 class="mt-4">Game List</h2>
     <div class="image-container">
-        <div ng-repeat="games in gameList" style="position:relative;">
-            <img class="gamelist-image" ng-src="{{games.gameImage}}" alt="" />
+        <div ng-repeat="games in gameList" class="hover-{{games.gameNo}} image-hover" style="position:relative; background: url({{games.gameImage}});">
+            <img class="gamelist-image" alt=""/>
             <div class="gamelist-content">
                 <h3>{{games.game}}</h3>
                 <button class="btn btn-danger gamelist-btn">{{games.button}}</button>

@@ -1,30 +1,32 @@
-.game-list-container h2{
+.game-list-container h2 {
     color: white;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 30px;
 }
 
-.game-list-container{
+.game-list-container {
     min-width: 1392px;
     margin-inline: auto;
     transform: translateX(-0.8%);
 }
 
-.gamelist-image{
+.gamelist-image {
     width: auto;
     height: auto;
+    cursor: pointer;
 }
 
-.image-container{ 
+.image-container {
     min-width: 1392px;
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
+    transition: all .5s ease-in-out;
 }
 
-h3{
-    font-family:Arial, Helvetica, sans-serif;
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
     margin-left: 20px;
@@ -34,19 +36,42 @@ h3{
 
 }
 
-.gamelist-btn{
+.gamelist-btn {
     background-color: rgb(211, 43, 43);
     margin-left: 20px;
     width: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.gamelist-btn:hover{
+.gamelist-btn:hover {
     background-color: white;
     color: red;
 }
 
-.gamelist-content{
+.gamelist-content {
     position: absolute;
     bottom: 20px;
 }
+
+.image-hover{
+    width: 339px;
+    transition: background 300ms ease-in-out;
+}
+
+.hover-1, .hover-2, .hover-3{
+    height: 220px;
+
+}
+
+.hover-4, .hover-5, .hover-6, .hover-7{
+    height: 200px;
+
+}
+
+.hover-1{
+    width: 690px;
+}
+
+.hover-1:hover{
+    background: url(/common/images/game-button-01-hover.png) !important;
+} 
