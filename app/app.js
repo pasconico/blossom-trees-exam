@@ -24,7 +24,20 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
                 console.error('Error loading jackpot:', error);
             });
     };
-    
+
+    $scope.clickButton = function () {
+        Swal.fire({
+            title: "Coming Soon!",
+            text: "Stay tuned...",
+            icon: "info",
+            customClass: {
+                popup: 'custom-popup',
+                confirmButton: 'custom-swal-button',
+                icon: 'custom-swal-icon'
+            }
+        });
+    }
+
 
     $http.get('data/gamelist.json').then(function (response) {
         $scope.gameList = response.data;

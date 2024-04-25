@@ -3,6 +3,22 @@
  * (c) 2010-2020 Google LLC. http://angularjs.org
  * License: MIT
  */
+
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
+@NgModule({
+    //=> Basic usage (forRoot can also take options, see the wiki)
+    imports: [SweetAlert2Module.forRoot()],
+
+    //=> In submodules only:
+    imports: [SweetAlert2Module],
+
+    //=> In submodules only, overriding options from your root module:
+    imports: [SweetAlert2Module.forChild({ /* options */ })]
+})
+export class AppModule {
+}
+
 (function(window) {'use strict';
 
 /* exported

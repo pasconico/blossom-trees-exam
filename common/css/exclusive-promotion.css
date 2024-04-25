@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.exclusive-promotion-container h2{
+.exclusive-promotion-container h2 {
     color: white;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 30px;
@@ -15,23 +15,33 @@
 
 }
 
-.exclusive-promotion-container{
+.exclusive-promotion-container {
     min-width: 1392px;
     margin-inline: auto;
     transform: translateX(-0.8%);
 }
 
-.promotion-image-container{
+.promotion-image-container {
     min-width: 1392px;
-    display: flex;
     gap: 10px;
+
+}
+
+.promotion-item {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .promo-image {
     width: auto;
     height: auto;
+    transition: transform 0.5s ease-out;
+}
+
+.promo-image:hover {
+    transform: scale(0.9);
 }
 
 a {
@@ -39,6 +49,6 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: red;
 }
