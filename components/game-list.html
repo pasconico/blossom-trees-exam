@@ -1,8 +1,9 @@
-<div class="game-list-container container">
+<div class="game-list-container container" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="mt-4">Game List</h2>
     <div class="image-container">
-        <div ng-repeat="games in gameList" class="hover-{{games.gameNo}} image-hover" style="position:relative; background: url({{games.gameImage}});">
-            <img class="gamelist-image" alt=""/>
+        <div ng-repeat="games in gameList" class="hover-{{games.gameNo}} image-hover"
+            style="position:relative; background: url({{games.gameImage}});">
+            <img class="gamelist-image" alt="" />
             <div class="gamelist-content">
                 <h3>{{games.game}}</h3>
                 <button class="btn btn-danger gamelist-btn" ng-click="clickButton()">{{games.button}}</button>
