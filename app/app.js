@@ -43,9 +43,19 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
         });
     }
 
-    $scope.setAOSDelay = function (index) {
+    $scope.setAOSDelayGameList = function (index) {
         var delay = index * 300;
         angular.element(document.querySelectorAll('.image-hover'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+    $scope.setAOSDelayPromotions = function (index) {
+        var delay = index * 500;
+        angular.element(document.querySelectorAll('.promotions'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+    $scope.setAOSDelayGSP = function (index) {
+        var delay = index * 100;
+        angular.element(document.querySelectorAll('.gsp-image'))[index].setAttribute('data-aos-delay', delay);
     };
 
 

@@ -1,7 +1,9 @@
-<div class="game-service-provider-container container" data-aos="fade-left" data-aos-offset="400"
-data-aos-easing="ease-in-sine" data-aos-duration="800">
+<div class="game-service-provider-container container">
     <h2 class="mt-4">Game Service Provider</h2>
-    <div class="gsp-image">
-        <img class="gsp mt-3" ng-repeat="gsp in gspList" ng-src="/common/images/gsp/gsp-{{gsp.gspNo}}.png" alt="">
+    <div class="image-container">
+        <div class="gsp-image" ng-repeat="gsp in gspList" data-aos="fade-up" data-aos-duration=""
+            data-aos-easing="ease-in-out" ng-init="setAOSDelayGSP($index)">
+            <img class="gsp mt-3" ng-src="/common/images/gsp/gsp-{{gsp.gspNo}}.png" alt="">
+        </div>
     </div>
 </div>
