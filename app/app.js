@@ -45,7 +45,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
 
     $scope.setAOSDelay = function (index) {
         var delay = index * 300;
-        angular.element(document.querySelectorAll('.image-hover', '.promo-image'))[index].setAttribute('data-aos-delay', delay);
+        angular.element(document.querySelectorAll('.image-hover'))[index].setAttribute('data-aos-delay', delay);
     };
 
 
