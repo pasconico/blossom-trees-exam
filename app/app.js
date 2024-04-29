@@ -6,7 +6,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
     $scope.gspNo = "";
     $scope.activeLink = null;
 
-    $scope.setActiveLink = function(linkName) {
+    $scope.setActiveLink = function (linkName) {
         $scope.activeLink = linkName;
     }
 
@@ -42,6 +42,11 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
             }
         });
     }
+
+    $scope.setAOSDelay = function (index) {
+        var delay = index * 300;
+        angular.element(document.querySelectorAll('.image-hover', '.promo-image'))[index].setAttribute('data-aos-delay', delay);
+    };
 
 
     $http.get('data/gamelist.json').then(function (response) {
