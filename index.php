@@ -1,3 +1,16 @@
+<?php 
+
+
+include($_SERVER['DOCUMENT_ROOT'].'/lib/detect_mobile.php');
+
+if ($mobile_detect->isMobile() || $mobile_detect->isTablet()) {
+    if (!isset($_SESSION["viewDesktop"])) {
+        header("Location:/mobile/#/");
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 
