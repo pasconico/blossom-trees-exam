@@ -4,6 +4,11 @@ var myApp = angular.module("myApp", ["ngRoute", "ngAnimate"]);
 
 myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
     $scope.gspNo = "";
+    $scope.activeLink = null;
+
+    $scope.setActiveLink = function(linkName) {
+        $scope.activeLink = linkName;
+    }
 
     $scope.loadCounter = function () {
         $http.get("app/api/getJackpot.php")
