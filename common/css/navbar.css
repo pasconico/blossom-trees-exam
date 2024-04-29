@@ -1,7 +1,6 @@
 .navbar {
-    background: url(/common/images/main-banner.jpg) top center no-repeat;
     position: relative;
-    height: 85px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
