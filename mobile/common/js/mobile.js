@@ -11,18 +11,18 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
     }
 
     $scope.loadCounter = function () {
-        $http.get("app/api/getJackpot.php")
+        $http.get("/app/api/getJackpot.php")
             .then(function (response) {
                 var data = response.data;
                 $('.jackpot-odometer').jOdometer({
                     increment: data.increment,
                     counterStart: data.counterStart,
                     counterEnd: false,
-                    numbersImage: 'common/images/odometer.svg',
-                    spaceNumbers: 3,
+                    numbersImage: 'common/images/mobile-odometer-yellow.png',
+                    spaceNumbers: 1,
                     formatNumber: true,
-                    widthNumber: 35,
-                    heightNumber: 70
+                    widthNumber: 20,
+                    heightNumber: 50
                 });
             })
             .catch(function (error) {

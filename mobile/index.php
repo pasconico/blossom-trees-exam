@@ -18,6 +18,7 @@ if (isset($_SESSION["viewDesktop"])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="common/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="common/css/banner.css" type="text/css">
+    <link rel="stylesheet" href="common/css/odometer.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="app.css" type="text/css">
 
@@ -32,6 +33,7 @@ if (isset($_SESSION["viewDesktop"])) {
     <div class="main-container">
         <nav ng-include="'components/navbar.html'"></nav>
         <div ng-include="'components/banner.html'"></div>
+        <div ng-include="'components/odometer.html'"></div>
     </div>
 
 
