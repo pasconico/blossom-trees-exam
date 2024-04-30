@@ -4,7 +4,12 @@
     min-width: 390px;
     position: relative;
     background-repeat: no-repeat;
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+	.banner{
+        background: url(../images/mobile-banner-rotate.png)top center no-repeat;
+    }
 }
 
 .btn-banner {
