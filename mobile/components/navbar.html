@@ -1,0 +1,60 @@
+<div class="nav-container container">
+    <button class="btn btn-bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <i class="fa-sharp fa-solid fa-bars fa-xl text-white "></i>
+    </button>
+    <a class="navbar-brand" href="#"><img src="common/images/logo.png" class="app-logo" alt="logo" /></a>
+    <div class="button-icons d-flex">
+        <button class="btn btn-globe" type="button" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-globe text-white "></i>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#" ng-click="clickButton()">ENGLISH</a></li>
+                <li><a class="dropdown-item" href="#" ng-click="clickButton()">KOREAN</a></li>
+                <li><a class="dropdown-item" href="#" ng-click="clickButton()">JAPANESE</a></li>
+            </ul>
+        </button>
+        <button class="btn btn-user" type="button" ng-click="clickButton()">
+            <i class="fa-solid fa-user text-white "></i>
+        </button>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <a class="navbar-brand" href="#"><img src="common/images/logo.png" class="logo-offcanvas" alt="logo" /></a>
+        <div class="navbar navbar-list" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#" ng-click="setActiveLink('Home')"
+                        ng-class="{ 'active': activeLink === 'Home' }">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Slot')"
+                        ng-class="{ 'active': activeLink === 'Slot' }">Slot Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Live')"
+                        ng-class="{ 'active': activeLink === 'Live' }">Live Casino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Sports')"
+                        ng-class="{ 'active': activeLink === 'Sports' }">Sports Betting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Mini')"
+                        ng-class="{ 'active': activeLink === 'Mini' }">Mini Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Lottery')"
+                        ng-class="{ 'active': activeLink === 'Lottery' }">Lottery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Events')"
+                        ng-class="{ 'active': activeLink === 'Events' }">Events & Promo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" ng-click="setActiveLink('Customer')"
+                        ng-class="{ 'active': activeLink === 'Customer' }">Customer</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

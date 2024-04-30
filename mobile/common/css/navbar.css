@@ -1,0 +1,86 @@
+.navbar {
+    position: relative;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 700;
+    color: white;
+    border-bottom-color: currentcolor;
+}
+
+.nav-underline .nav-link {
+    display: inline;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0px;
+    border-bottom: var(--bs-nav-underline-border-width) solid transparent;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
+}
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 400;
+    color: white;
+    border-bottom-color: currentcolor;
+}
+
+.btn-bar {
+    margin: 10px 10px 15px -10px;
+}
+
+.btn-close {
+    text-transform: none;
+    color: white;
+}
+
+.app-logo {
+    margin: 0 auto;
+    width: 120px;
+}
+
+.logo-offcanvas {
+    width: 110px;
+    margin: 16px 0px 5px 10px;
+}
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 400px;
+    --bs-offcanvas-height: 30vh;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: white;
+    --bs-offcanvas-bg: #181623;
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+}
+
+.offcanvas.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 35%;
+    border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(-100%);
+}
+
+.btn-user, .btn-globe{
+    padding-right: 2px;
+}
