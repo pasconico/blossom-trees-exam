@@ -31,10 +31,11 @@ z-index: 2;
 
 .currency-sign{
     margin-top: 4px;
+    margin-right: 20px;
 }
 
 .jackpot-odometer{
-    width: 550px;
+    width: 475px;
     height: 70px;
     overflow: hidden;
     position: relative;

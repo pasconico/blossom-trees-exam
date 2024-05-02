@@ -21,7 +21,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
                     numbersImage: 'common/images/odometer.svg',
                     spaceNumbers: 3,
                     formatNumber: true,
-                    widthNumber: 35,
+                    widthNumber: 30,
                     heightNumber: 70
                 });
             })

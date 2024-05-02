@@ -18,11 +18,11 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
                     increment: data.increment,
                     counterStart: data.counterStart,
                     counterEnd: false,
-                    numbersImage: 'common/images/mobile-odometer-yellow.png',
-                    spaceNumbers: 1,
+                    numbersImage: 'common/images/mobile-odometer.svg',
+                    spaceNumbers: -1,
                     formatNumber: true,
                     widthNumber: 20,
-                    heightNumber: 50
+                    heightNumber: 50,
                 });
             })
             .catch(function (error) {
