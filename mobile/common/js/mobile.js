@@ -29,6 +29,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
                 console.error('Error loading jackpot:', error);
             });
     };
+    
 
     $scope.clickButton = function () {
         Swal.fire({
@@ -43,16 +44,6 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
         });
     }
 
-
-    $scope.setAOSDelayGameList = function (index) {
-        var delay = index * 300;
-        angular.element(document.querySelectorAll('.card'))[index].setAttribute('data-aos-delay', delay);
-    };
-
-    $scope.setAOSDelayPromotions = function (index) {
-        var delay = index * 500;
-        angular.element(document.querySelectorAll('.promotions'))[index].setAttribute('data-aos-delay', delay);
-    };
 
     $scope.setAOSDelayGSP = function (index) {
         var delay = index * 100;
@@ -71,4 +62,6 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
     $http.get('/data/gsp.json').then(function (response) {
         $scope.gspList = response.data;
     });
+
+
 }]);
