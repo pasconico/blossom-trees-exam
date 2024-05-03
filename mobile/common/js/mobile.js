@@ -46,7 +46,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
 
     $scope.setAOSDelayGameList = function (index) {
         var delay = index * 300;
-        angular.element(document.querySelectorAll('.image-hover'))[index].setAttribute('data-aos-delay', delay);
+        angular.element(document.querySelectorAll('.card'))[index].setAttribute('data-aos-delay', delay);
     };
 
     $scope.setAOSDelayPromotions = function (index) {
@@ -60,7 +60,7 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
     };
 
 
-    $http.get('/data/gamelist.json').then(function (response) {
+    $http.get('data/gamelist.json').then(function (response) {
         $scope.gameList = response.data;
     });
 

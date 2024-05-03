@@ -19,6 +19,7 @@ if (isset($_SESSION["viewDesktop"])) {
     <link rel="stylesheet" href="common/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="common/css/banner.css" type="text/css">
     <link rel="stylesheet" href="common/css/odometer.css" type="text/css">
+    <link rel="stylesheet" href="common/css/game-list.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="app.css" type="text/css">
 
@@ -33,7 +34,8 @@ if (isset($_SESSION["viewDesktop"])) {
     <div class="main-container">
         <nav ng-include="'components/navbar.html'"></nav>
         <div ng-include="'components/banner.html'"></div>
-        <div ng-include="'components/odometer.html'"></div>
+        <div ng-include="'components/odometer.html'"></div>.
+        <div ng-include="'components/game-list.html'"></div>
     </div>
 
 
