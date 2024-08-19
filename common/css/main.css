@@ -1,0 +1,94 @@
+h1,
+h2 {
+    font-family: 'Philadelphian-Gothic Gothic';
+}
+
+p {
+    font-family: "Dhyana Regular";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main-text {
+    margin-top: 5%;
+}
+
+.main-text-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.main-text-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blue-text {
+    color: #4528B6;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 86px;
+}
+
+.black-text {
+    color: #131212;
+    font-size: 136px;
+    font-weight: 700;
+    line-height: 147px;
+}
+
+.main-paragraph {
+    padding: 0 13% 0 13%;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-family: "Poppins Regular";
+    padding: 0 20%;
+}
+
+.btn-increase-main {
+    background-color: #4528B6;
+    color: white;
+    height: 112px;
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 40px;
+    width: 50%;
+}
+
+.btn-increase-main:hover,
+.btn-increase-main:active {
+    background: #240a8b !important;
+    border: 4px solid #240a8b !important;
+    color: white;
+}
+
+.btn-how-it-works {
+    border: 4px solid #131212;
+    height: 112px;
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 40px;
+    width: 50%;
+}
+
+.btn-how-it-works:hover,
+.btn-how-it-works:active {
+    background: #240a8b !important;
+    border: 4px solid #240a8b !important;
+    color: white;
+}

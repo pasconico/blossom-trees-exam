@@ -1,0 +1,32 @@
+<div class="full-stack-email-container">
+    <div class="full-stack-email-content">
+        <div class="full-stack-email-desc">
+            <h1 class="full-stack-email-header text-center">FULL STACK EMAIL & SMS</h1>
+            <p class="full-stack-email-text">We create your strategy, craft compelling copy, design engaging emails, and
+                constantly measure, analyze,
+                test, and optimize your campaigns to keep your brand ahead of the competition.</p>
+        </div>
+
+
+        <div ng-repeat="desc in descList">
+            <div class="full-stack-email-desc-lists">
+                <img ng-src="/common/images/full-stack-email/desc-image-{{desc.imageNo}}.png" alt="" width="100%"
+                    height="" class="desc-image">
+                <div class="desc-list-content">
+                    <div class="desc-list-title">
+                        <div class="desc-icon">
+                            <img ng-src="/common/images/full-stack-email/desc-icon-{{desc.iconNo}}.png" alt=""
+                                width="100%" height="100%" class="desc-icon-{{desc.iconNo}}">
+                        </div>
+                        <h5 class="desc-title">{{desc.descTitle}}</h5>
+                    </div>
+                    <p class="description">{{desc.description}}</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-free-consultation text-white" ng-click="clickButton()">FREE CONSULTATION</button>
+    </div>
+
+    <div class="left-design"></div>
+    <div class="right-design"></div>
+</div>

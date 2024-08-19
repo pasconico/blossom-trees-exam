@@ -1,0 +1,123 @@
+.cannabis-brands-container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.waves-image {
+    position: relative;
+    width: 100%;
+    height: 782px;
+}
+
+.waves {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cannabis-image {
+    position: absolute;
+    top: 53%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 1189px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cannabis {
+    width: 100%;
+    height: auto; 
+}
+
+
+
+.cannabis-gradient-opacity {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cannabis-brands-content {
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding-bottom: 90px;
+}
+
+.cannabis-brands {
+    display: flex;
+    gap: 40px;
+    margin-inline: auto;
+    background: linear-gradient(#F3F2F8, #E4E1EE);
+    box-shadow: 0px 4px 12.2px 0px #685488;
+    border-radius: 20px;
+    width: 1722px;
+    height: 186px;
+}
+
+.cannabis-brands-text {
+    font-family: "Dhyana Regular";
+    font-weight: 700;
+    color: #4528B6;
+    font-size: 31px;
+    line-height: 47px;
+    margin: 0;
+}
+
+
+.brands-images {
+    display: flex;
+    flex-direction: row;
+    gap: 12%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 79px;
+    width: 100%;
+}
+
+.brand-logo.CANNAWHOLESALERS {
+    height: 103px;
+}
+
+.blossom-trees-features {
+    display: flex;
+    flex-direction: row;
+    width: 1722px;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.features-text {
+    font-family: "Dhyana Regular";
+    font-weight: 700;
+    color: #4528B6;
+    font-size: 28px;
+    line-height: 42px;
+    padding: 0 25%;
+    text-align: center;
+    margin: 0;
+}
+
+.icon-image {
+    width: 83px;
+    height: 83px;
+}
+
+.blossom-trees-features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#F3F2F8, #E4E1EE);
+    box-shadow: 0px 4px 12.2px 0px #685488;
+    border-radius: 20px;
+    gap: 10px;
+    width: 386px;
+    padding: 20px;
+}
+

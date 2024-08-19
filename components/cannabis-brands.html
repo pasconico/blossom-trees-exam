@@ -1,0 +1,37 @@
+<div class="cannabis-brands-container">
+
+    <div class="cannabis-brands-images mt-5">
+        <div class="waves-image mt-5">
+            <img src="/common/images/cannabis-brands/waves.png" alt="waves" class="waves">
+            <div class="cannabis-image">
+                <img src="/common/images/cannabis-brands/cannabis.png" alt="cannabis" class="cannabis cannabis-gradient-opacity">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="cannabis-brands-content">
+
+        <div class="cannabis-brands">
+            <div class="brands-images">
+                <h6 class="cannabis-brands-text">TRUSTED BY LEADING <br>
+                    CANNABIS BRANDS</h6>
+                <div ng-repeat="cannabisBrands in brandsList">
+                    <img ng-src="/common/images/cannabis-brands/brands-logo/brand-logo-{{cannabisBrands.brandNo}}.png"
+                        alt="Brand Logo" width="100%" class="brand-logo {{cannabisBrands.brandName}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="blossom-trees-features mx-auto">
+            <div ng-repeat="features in featuresList">
+                <div class="blossom-trees-features-content">
+                    <img ng-src="/common/images/cannabis-brands/feature-icons/feature-icon-{{features.iconNo}}.png"
+                        alt="iconImage" class="icon-image" width="100%" height="100%">
+                    <h6 class="features-text">{{features.featureText}}</h6>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

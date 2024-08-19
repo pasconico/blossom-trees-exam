@@ -1,0 +1,36 @@
+.tech-partners-container {
+    padding-top: 120px;
+    background-image: url(/common/images/tech-partners/rectangle-top.png);
+    background-size: cover;
+}
+
+.tech-partners-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tech-partners-text {
+    font-family: "Philadelphian-Gothic Gothic";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88px;
+    color: #4528B6;
+}
+
+.tech-partners-image-container {
+    min-width: 1720px;
+}
+
+.tech-partners-image-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-partners-image {
+    width: 314px;
+    height: 161px;
+}
