@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: url(common/images/background.png) top center;
     background-size: cover;
@@ -9,7 +13,8 @@ body {
 }
 
 .custom-popup {
-    background-color: #181623;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
 div:where(.swal2-container) h2:where(.swal2-title) {
@@ -17,12 +22,13 @@ div:where(.swal2-container) h2:where(.swal2-title) {
     max-width: 100%;
     margin: 0;
     padding: .8em 1em 0;
-    color: white !important;
+    color: #131212 !important;
     font-size: 1.875em;
     font-weight: 600;
     text-align: center;
     text-transform: none;
     word-wrap: break-word;
+    font-family: "Dhyana Regular" !important;
 }
 
 div:where(.swal2-container) .swal2-html-container {
@@ -31,7 +37,7 @@ div:where(.swal2-container) .swal2-html-container {
     margin: 1em 1.6em .3em;
     padding: 0;
     overflow: auto;
-    color: #bababa !important;
+    color: #313131 !important;
     font-size: 1.125em;
     font-weight: normal;
     line-height: normal;
@@ -42,16 +48,11 @@ div:where(.swal2-container) .swal2-html-container {
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     border: 0;
-    border-radius: .25em;
+    border-radius: 50px;
     background: initial;
-    background-color: rgb(211, 43, 43) !important;
-    color: #fff;
+    background-color: #4528B6 !important;
     font-size: 1em;
-}
-
-div:where(.swal2-icon).swal2-info {
-    border-color: white !important;
-    color: white !important;
+    padding: 15px 30px;
 }
 
 div:where(.swal2-container) div:where(.swal2-popup) {
@@ -64,8 +65,6 @@ div:where(.swal2-container) div:where(.swal2-popup) {
     padding: 0 0 1.25em;
     border: none;
     border-radius: 5px;
-    background: #fff;
-    color: white;
     font-family: inherit;
     font-size: 1rem;
 }

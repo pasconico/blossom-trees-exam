@@ -1,4 +1,5 @@
 .tech-partners-container {
+    height: 50vh;
     padding-top: 120px;
     background-image: url(/common/images/tech-partners/rectangle-top.png);
     background-size: cover;
@@ -33,4 +34,13 @@
 .tech-partners-image {
     width: 314px;
     height: 161px;
+}
+
+.tech-partner-logo {
+    transition: transform 0.5s ease-out;
+	cursor: pointer;
+}
+
+.tech-partner-logo:hover {
+    transform: scale(0.9);
 }

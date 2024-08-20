@@ -1,0 +1,55 @@
+<div class="our-process-container" id="our-process">
+    <div class="top-cloud"></div>
+    <div class="our-process-content">
+        <div class="our-process-texts">
+            <h1 class="our-process-header text-center" data-aos="fade-up" data-aos-duration="2000">OUR PROCESS</h1>
+            <p class="our-process-paragraph text-center" data-aos="fade-up" data-aos-duration="3000">Ready to grow your
+                cannabis brand?
+                Here’s how we work together:</p>
+        </div>
+
+        <div class="our-process-steps-content">
+            <div class="line-1">
+                <img src="/common/images/our-process/process-guide/line-01.png" alt="">
+            </div>
+            <div ng-repeat="step in guideList | limitTo: 3:0" class="steps-guide">
+                <div class="step-number-border">
+                    <h1 class="step-number text-center">{{step.stepNo}}</h1>
+                </div>
+                <div class="steps-main-content" data-aos="{{ getStepAOS($index, 0) }}"
+                    ng-init="setAOSDelaySteps($index)">
+                    <img ng-src="/common/images/our-process/process-guide/process-icon-{{step.iconNo}}.png" alt=""
+                        class="steps-image">
+                    <div class="title-desc-gap">
+                        <h1 class="step-title text-center step-title-{{step.stepNo}}">{{step.stepTitle}}</h1>
+                        <p class="step-desc text-center step-desc-{{step.stepNo}}">{{step.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="our-process-steps-content bottom">
+            <div class="line-2">
+                <img src="/common/images/our-process/process-guide/line-02.png" alt="">
+            </div>
+            <div ng-repeat="step in guideList | limitTo: 3:3" class="steps-guide">
+                <div class="step-number-border">
+                    <h1 class="step-number text-center">{{step.stepNo}}</h1>
+                </div>
+                <div class="steps-main-content" data-aos="{{ getStepAOS($index, 3) }}"
+                    ng-init="setAOSDelaySteps($index + 3)" ng-init="setAOSDelaySteps($index)">
+                    <img ng-src="/common/images/our-process/process-guide/process-icon-{{step.iconNo}}.png" alt=""
+                        class="steps-image">
+                    <div class="title-desc-gap">
+                        <h1 class="step-title text-center step-title-{{step.stepNo}}">{{step.stepTitle}}</h1>
+                        <p class="step-desc text-center step-desc-{{step.stepNo}}">{{step.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-get-started" type="button" ng-click="clickButton()" data-aos="zoom-in-up">GET STARTED NOW</button>
+    </div>
+    <div class="bottom-cloud"></div>
+</div>

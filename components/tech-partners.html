@@ -1,12 +1,14 @@
 <div class="tech-partners-container">
     <div class="tech-partners-content">
-        <h1 class="tech-partners-text text-center">OUR TECH PARTNERS</h1>
+        <h1 class="tech-partners-text text-center" data-aos="fade-down-right">OUR TECH PARTNERS</h1>
         <div class="tech-partners-image-container">
-        <div class="tech-partners-image-flex">
-            <div ng-repeat="partner in techPartnersList" class="tech-partners-image">
-                <img ng-src="/common/images/tech-partners/tech-partner-{{partner.partnerNo}}.png" alt="" width="100%">
+            <div class="tech-partners-image-flex">
+                <div ng-repeat="partner in techPartnersList" class="tech-partners-image"
+                    data-aos="{{ getAOSDirection($index) }}" ng-init="setAOSDelayPartners($index)">
+                    <img ng-src="/common/images/tech-partners/tech-partner-{{partner.partnerNo}}.png" alt=""
+                        width="100%" class="tech-partner-logo">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </div>

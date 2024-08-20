@@ -1,15 +1,15 @@
 <div class="full-stack-email-container">
     <div class="full-stack-email-content">
-        <div class="full-stack-email-desc">
-            <h1 class="full-stack-email-header text-center">FULL STACK EMAIL & SMS</h1>
-            <p class="full-stack-email-text">We create your strategy, craft compelling copy, design engaging emails, and
+        <div class="full-stack-email-desc" >
+            <h1 class="full-stack-email-header text-center" data-aos="zoom-out-up">FULL STACK EMAIL & SMS</h1>
+            <p class="full-stack-email-text" data-aos="zoom-out-down">We create your strategy, craft compelling copy, design engaging emails, and
                 constantly measure, analyze,
                 test, and optimize your campaigns to keep your brand ahead of the competition.</p>
         </div>
 
 
         <div ng-repeat="desc in descList">
-            <div class="full-stack-email-desc-lists">
+            <div class="full-stack-email-desc-lists" data-aos="{{ $index % 2 === 0 ? 'fade-left' : 'fade-right' }}" ng-init="setAOSDelayDesc($index)">
                 <img ng-src="/common/images/full-stack-email/desc-image-{{desc.imageNo}}.png" alt="" width="100%"
                     height="" class="desc-image">
                 <div class="desc-list-content">
@@ -24,9 +24,10 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-free-consultation text-white" ng-click="clickButton()">FREE CONSULTATION</button>
+        <button class="btn btn-free-consultation text-white" ng-click="clickButton()" data-aos="fade-up" data-aos-duration="3000">FREE CONSULTATION</button>
+        <img src="/common/images/full-stack-email/rectangle-bottom.png" alt="" width="100%">
     </div>
 
-    <div class="left-design"></div>
+    <div class="left-design" ></div>
     <div class="right-design"></div>
 </div>

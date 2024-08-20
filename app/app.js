@@ -2,10 +2,9 @@ var myApp = angular.module("myApp", ["ngRoute", "ngAnimate"]);
 
 
 
-myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
-    $scope.gspNo = "";
-    $scope.activeLink = null;
+myApp.controller("AppController", ['$scope', '$http', '$anchorScroll', function ($scope, $http, $anchorScroll) {
 
+    $scope.activeLink = null;
     $scope.setActiveLink = function (linkName) {
         $scope.activeLink = linkName;
     }
@@ -23,21 +22,56 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
         });
     }
 
-    $scope.setAOSDelayGameList = function (index) {
-        var delay = index * 300;
-        angular.element(document.querySelectorAll('.image-hover'))[index].setAttribute('data-aos-delay', delay);
+    $scope.getAOSDirection = function(index) {
+        if (index === 0 || index === 1) {
+            return 'fade-up-right';
+        } else if (index === 2) {
+            return 'fade-up';
+        } else if (index === 3 || index === 4) {
+            return 'fade-up-left';
+        }
     };
-
-    $scope.setAOSDelayPromotions = function (index) {
+    
+    $scope.setAOSDelayPartners = function(index) {
         var delay = index * 500;
-        angular.element(document.querySelectorAll('.promotions'))[index].setAttribute('data-aos-delay', delay);
+        angular.element(document.querySelectorAll('.tech-partners-image'))[index].setAttribute('data-aos-delay', delay);
     };
 
-    $scope.setAOSDelayGSP = function (index) {
-        var delay = index * 100;
-        angular.element(document.querySelectorAll('.gsp-image'))[index].setAttribute('data-aos-delay', delay);
+    $scope.setAOSDelayDesc = function (index) {
+        var delay = index * 500;
+        angular.element(document.querySelectorAll('.full-stack-email-desc-lists'))[index].setAttribute('data-aos-delay', delay);
     };
 
+    $scope.setAOSDelaySteps = function (index) {
+        var delay = index * 800;
+        angular.element(document.querySelectorAll('.steps-main-content'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+    $scope.setAOSDelayFeatures = function (index) {
+        var delay = index * 600;
+        angular.element(document.querySelectorAll('.blossom-trees-features-content'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+    $scope.setAOSDelayBrands = function (index) {
+        var delay = index * 500;
+        angular.element(document.querySelectorAll('.brands'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+    $scope.setAOSDelayFAQs = function (index) {
+        var delay = index * 500;
+        angular.element(document.querySelectorAll('.brands'))[index].setAttribute('data-aos-delay', delay);
+    };
+
+
+    $scope.getStepAOS = function(index, offset) {
+        var actualIndex = index + offset;
+        return actualIndex % 2 === 0 ? 'fade-left' : 'fade-right';
+    };
+    
+    $scope.setAOSDelaySteps = function(index) {
+        var delay = index * 500;
+        angular.element(document.querySelectorAll('.steps-main-content'))[index].setAttribute('data-aos-delay', delay);
+    };
 
     $http.get('data/tech-partners.json').then(function (response) {
         $scope.techPartnersList = response.data;
@@ -53,5 +87,9 @@ myApp.controller("AppController", ['$scope', '$http', function ($scope, $http) {
 
     $http.get('data/description-list.json').then(function (response) {
         $scope.descList = response.data;
+    });
+
+    $http.get('data/process-list.json').then(function (response) {
+        $scope.guideList = response.data;
     });
 }]);

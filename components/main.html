@@ -1,15 +1,18 @@
-<div class="main-container">
+<div class="main-container" id="main">
     <nav ng-include="'components/navbar.html'"></nav>
 
     <div class="main-content">
         <div class="main-text text-center">
             <div class="main-text-gap">
-                <div class="main-text-header">
+                <div class="main-text-header" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="2000">
                     <h2 class="blue-text">EMAIL & SMS EXPERTS FOR</h2>
                     <h1 class="black-text">CANNABIS BRANDS</h1>
                 </div>
 
-                <p class="main-paragraph">We specialize in crafting compliant, results-driven email and SMS campaigns
+                <p class="main-paragraph" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                    data-aos-duration="2000">We
+                    specialize in crafting compliant, results-driven email and SMS campaigns
                     specifically for cannabis brands. We help you overcome social media restrictions, banned substance
                     regulations, and email provider limitations. Boost your brand's revenue, engage your customers, and
                     turn
@@ -18,8 +21,10 @@
         </div>
 
         <div class="main-buttons">
-            <button class="btn btn-increase-main text-white" ng-click="clickButton()">INCREASE MY REVENUE</button>
-            <button class="btn btn-how-it-works" ng-click="clickButton()">HOW IT WORKS</button>
+            <button class="btn btn-increase-main text-white" ng-click="clickButton()" data-aos="fade-up-right"
+                data-aos-offset="300" data-aos-duration="3000">INCREASE MY REVENUE</button>
+            <button class="btn btn-how-it-works" ng-click="clickButton()" data-aos-duration="3000" data-aos="fade-up-left" data-aos-offset="300">HOW
+                IT WORKS</button>
         </div>
     </div>
 </div>

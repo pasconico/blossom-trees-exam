@@ -1,0 +1,38 @@
+[
+    {
+        "stepNo": "1",
+        "iconNo": "01",
+        "stepTitle": "Email Marketing Audit",
+        "description": "Schedule a 15-minute discovery call to discuss your specific needs and provide you with a complimentary Email Marketing Audit."
+    },
+    {
+        "stepNo": "2",
+        "iconNo": "02",
+        "stepTitle": "Consultation & Strategy Call",
+        "description": "We craft a customized strategy plan on how to best market your brand. Learn about our expertise, services offered, and how we can help scale your business."
+    },
+    {
+        "stepNo": "3",
+        "iconNo": "03",
+        "stepTitle": "Onboarding & Kickoff Call",
+        "description": "Once you are ready to partner with us, we get you onboarded and get the party started. We get your sales and customer engagement high as a kite."
+    },
+    {
+        "stepNo": "6",
+        "iconNo": "06",
+        "stepTitle": "Split test, Analyze, and Improve Performance",
+        "description": "We review performance data, make improvements, and constantly split-test to achieve better metrics over time."
+    },
+    {
+        "stepNo": "5",
+        "iconNo": "05",
+        "stepTitle": "Launch Campaigns & Flows",
+        "description": "We get your campaigns and automations live and generating revenue, engagement and customers."
+    },
+    {
+        "stepNo": "4",
+        "iconNo": "04",
+        "stepTitle": "Produce First Designs",
+        "description": "Within the first few days, we deliver the initial email design drafts. You provide feedback, and we revise as needed."
+    }
+]
